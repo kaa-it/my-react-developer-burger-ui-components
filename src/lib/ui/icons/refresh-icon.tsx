@@ -1,7 +1,6 @@
-import type { FC } from 'react';
 import type { TIconProps } from './utils';
 
-export const RefreshIcon: FC<TIconProps> = ({ className }) => {
+export const RefreshIcon = ({ className }: TIconProps): React.JSX.Element => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

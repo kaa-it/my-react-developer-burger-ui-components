@@ -1,10 +1,9 @@
-import React from 'react';
 import { getFormattedDate, isYesterday, isToday, getFormattedTime } from './formatted-date.utils';
 
-export const FormattedDate: React.FC<{
+export const FormattedDate = ({ date, className }: {
     date: Date;
     className?: string;
-}> = ({ date, className }) => {
+}): React.JSX.Element => {
     if (isToday(date)) {
         return <span className={className}>Сегодня, {getFormattedTime(date)}</span>;
     }

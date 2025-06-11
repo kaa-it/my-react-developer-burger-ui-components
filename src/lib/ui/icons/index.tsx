@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-
 import { CurrencyIcon } from './currency-icon';
 import { BurgerIcon } from './burger-icon';
 import { LockIcon } from './lock-icon';
@@ -21,26 +19,28 @@ import { PlusIcon } from './plus-icon';
 import { RefreshIcon } from './refresh-icon';
 import type { TIconProps } from './utils';
 
+export type TIconComponent = (props: TIconProps) => React.JSX.Element;
+
 export type TIcons = {
-    CurrencyIcon: FC<TIconProps>;
-    BurgerIcon: FC<TIconProps>;
-    LockIcon: FC<TIconProps>;
-    DragIcon: FC<TIconProps>;
-    DeleteIcon: FC<TIconProps>;
-    ArrowUpIcon: FC<TIconProps>;
-    ArrowDownIcon: FC<TIconProps>;
-    MenuIcon: FC<TIconProps>;
-    CloseIcon: FC<TIconProps>;
-    CheckMarkIcon: FC<TIconProps>;
-    ListIcon: FC<TIconProps>;
-    ProfileIcon: FC<TIconProps>;
-    EditIcon: FC<TIconProps>;
-    InfoIcon: FC<TIconProps>;
-    ShowIcon: FC<TIconProps>;
-    HideIcon: FC<TIconProps>;
-    LogoutIcon: FC<TIconProps>;
-    PlusIcon: FC<TIconProps>;
-    RefreshIcon: FC<TIconProps>;
+    CurrencyIcon: TIconComponent;
+    BurgerIcon: TIconComponent;
+    LockIcon: TIconComponent;
+    DragIcon: TIconComponent;
+    DeleteIcon: TIconComponent;
+    ArrowUpIcon: TIconComponent;
+    ArrowDownIcon: TIconComponent;
+    MenuIcon: TIconComponent;
+    CloseIcon: TIconComponent;
+    CheckMarkIcon: TIconComponent;
+    ListIcon: TIconComponent;
+    ProfileIcon: TIconComponent;
+    EditIcon: TIconComponent;
+    InfoIcon: TIconComponent;
+    ShowIcon: TIconComponent;
+    HideIcon: TIconComponent;
+    LogoutIcon: TIconComponent;
+    PlusIcon: TIconComponent;
+    RefreshIcon: TIconComponent;
 };
 
 export {

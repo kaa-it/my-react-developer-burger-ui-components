@@ -1,8 +1,7 @@
-import type { FC } from 'react';
 import { getIconColor } from './utils';
 import type { TIconProps } from './utils';
 
-export const CloseIcon: FC<TIconProps> = ({ type, className, onClick }) => {
+export const CloseIcon =  ({ type, className, onClick }: TIconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

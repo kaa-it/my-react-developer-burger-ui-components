@@ -1,8 +1,7 @@
-import type { FC } from 'react';
 import { getIconColor } from './utils';
 import type { TIconProps } from './utils';
 
-export const InfoIcon: FC<TIconProps> = ({ type, className }) => {
+export const InfoIcon = ({ type, className }: TIconProps): React.JSX.Element => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -1,8 +1,7 @@
-import type { FC } from 'react';
 import { getIconColor } from './utils';
 import type { TIconProps } from './utils';
 
-export const MenuIcon: FC<TIconProps> = ({ type, className, onClick }) => {
+export const MenuIcon = ({ type, className, onClick }: TIconProps): React.JSX.Element => {
     return (
         <svg
             width="24"
