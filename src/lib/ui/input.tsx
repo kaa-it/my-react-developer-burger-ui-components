@@ -23,15 +23,15 @@ interface TInputInterface extends Omit<React.HTMLProps<HTMLInputElement>, 'size'
 }
 
 function useCombinedRefs<T = HTMLElement>(
-    ...refs: Array<React.MutableRefObject<T> | React.LegacyRef<T>>
-): React.MutableRefObject<T | null> {
+    ...refs: Array<React.RefObject<T> | React.Ref<T>>
+): React.RefObject<T | null> {
     const targetRef = React.useRef<T>(null);
     React.useEffect(() => {
         refs.forEach((ref) => {
             if (typeof ref === 'function') {
                 ref(targetRef.current);
             } else if (ref != null) {
-                (ref as React.MutableRefObject<T | null>).current = targetRef.current;
+                (ref as React.RefObject<T | null>).current = targetRef.current;
             }
         });
     }, [refs]);

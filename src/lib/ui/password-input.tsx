@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Input } from './input';
 
 interface TPasswordInputInterface
@@ -13,7 +13,7 @@ interface TPasswordInputInterface
     onChange(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
-export const PasswordInput: React.FC<TPasswordInputInterface> = ({
+export const PasswordInput = ({
     value,
     placeholder = 'Пароль',
     errorText = 'Некорректный пароль',
@@ -23,7 +23,7 @@ export const PasswordInput: React.FC<TPasswordInputInterface> = ({
     icon = 'ShowIcon',
     extraClass = '',
     ...rest
-}) => {
+}: TPasswordInputInterface): React.JSX.Element => {
     const [visible, setVisible] = useState(false);
     const [currentIcon, setCurrentIcon] = useState<TPasswordInputInterface['icon']>(icon);
     const [fieldDisabled, setDisabled] = useState(icon === 'EditIcon');

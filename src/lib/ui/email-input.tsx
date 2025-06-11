@@ -18,7 +18,7 @@ interface TEmailInputInterface
     onChange(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
-export const EmailInput: React.FC<TEmailInputInterface> = ({
+export const EmailInput = ({
     value,
     errorText = 'Ой, произошла ошибка!',
     checkValid,
@@ -28,7 +28,7 @@ export const EmailInput: React.FC<TEmailInputInterface> = ({
     isIcon = false,
     extraClass = '',
     ...rest
-}) => {
+}: TEmailInputInterface): React.JSX.Element => {
     const [fieldDisabled, setDisabled] = useState(isIcon);
 
     const [error, setError] = useState(false);

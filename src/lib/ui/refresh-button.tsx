@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import type { FC, ButtonHTMLAttributes } from 'react';
+import type { ButtonHTMLAttributes } from 'react';
 import './common-button.css';
 import { RefreshIcon } from './icons';
 
@@ -8,13 +8,13 @@ type TProps = ButtonHTMLAttributes<HTMLButtonElement> & {
     extraClass?: string;
 };
 
-export const RefreshButton: FC<TProps> = ({
+export const RefreshButton = ({
     text = 'Обновить',
     type = 'button',
     extraClass,
     className,
     ...rest
-}) => {
+}: TProps): React.JSX.Element => {
     const classNames = clsx('common_button', extraClass, className);
 
     return (

@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import type { FC, HTMLProps } from 'react';
+import type { HTMLProps } from 'react';
 import './move-button.css';
 import { ArrowDownIcon, ArrowUpIcon } from './icons';
 
@@ -11,7 +11,7 @@ type TProps = HTMLProps<HTMLDivElement> & {
     extraClass?: string;
 };
 
-export const MoveButton: FC<TProps> = ({
+export const MoveButton = ({
     isUpDisabled,
     isDownDisabled,
     handleMoveDown,
@@ -19,7 +19,7 @@ export const MoveButton: FC<TProps> = ({
     extraClass,
     className,
     ...rest
-}) => {
+}: TProps): React.JSX.Element => {
     const classNames = clsx('move_button_container', extraClass, className);
 
     return (

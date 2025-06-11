@@ -1,12 +1,13 @@
 import clsx from 'clsx';
-import React from 'react';
 import './counter.css';
 
-export const Counter: React.FC<{
-    count: number;
+type TProps = {
+	count: number;
     size?: 'default' | 'small';
     extraClass?: string;
-}> = ({ count = 0, size = 'default', extraClass = '' }) => {
+}
+
+export const Counter = ({ count = 0, size = 'default', extraClass = '' }: TProps): React.JSX.Element => {
     const className = clsx(
         'counter',
         {
