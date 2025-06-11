@@ -10,6 +10,7 @@ import { Counter } from './ui/counter';
 import { EmailInput } from './ui/email-input';
 import { PasswordInput } from './ui/password-input';
 import { MoveButton } from './ui/move-button';
+import { Preloader } from './ui/preloader';
 import {
     BurgerIcon,
     CloseIcon,
@@ -64,4 +65,5 @@ export {
     ArrowDownIcon,
     MenuIcon,
     MoveButton,
+	Preloader,
 };
