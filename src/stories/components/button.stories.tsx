@@ -1,0 +1,120 @@
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { fn } from 'storybook/test';
+import {Button} from "../../lib";
+
+const meta: Meta<typeof Button> = {
+  title: "Components/Button",		
+  component: Button,
+  args: { onClick: fn() },
+} satisfies Meta<typeof Button>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const PrimarySmall: Story = {
+  args: {
+	type: "primary",
+	size: "small",
+	children: "Нажми на меня"
+  },
+};
+
+export const PrimaryMedium: Story = {
+  args: {
+	type: "primary",
+	size: "medium",
+	children: "Нажми на меня"
+  },
+};
+
+export const PrimaryLarge: Story = {
+  args: {
+	type: "primary",
+	size: 'large',
+	children: "Нажми на меня"
+  },
+};
+
+export const SecondarySmall: Story = {
+  args: {
+	type: "secondary",
+	size: "small",
+	children: "Нажми на меня"
+  },
+};
+
+export const SecondaryMedium: Story = {
+  args: {
+	type: "secondary",
+	size: "medium",
+	children: "Нажми на меня"
+  },
+};
+
+export const SecondaryLarge: Story = {
+  args: {
+	type: "secondary",
+	size: "large",
+	children: "Нажми на меня"
+  },
+};
+
+// export const PrimarySmallStory: Story = {
+//   render: function Render() {
+//     return (
+//       <Button htmlType="button" type="primary" size="small" extraClass="ml-2">
+//         Нажми на меня
+//       </Button>
+//     );
+//   },
+// };
+
+// export const PrimaryMediumStory: Story = {
+//   render: function Render() {
+//     return (
+//       <Button htmlType="button" type="primary" size="medium">
+//         Нажми на меня
+//       </Button>
+//     );
+//   },
+// };
+
+// export const PrimaryLargeStory: Story = {
+//   render: function Render() {
+//     return (
+//       <Button htmlType="button" type="primary" size="large">
+//         Нажми на меня
+//       </Button>
+//     );
+//   },
+// };
+
+// export const SecondarySmallStory: Story = {
+//   render: function Render() {
+//     return (
+//       <Button htmlType="button" type="secondary" size="small">
+//         Нажми на меня
+//       </Button>
+//     );
+//   },
+// };
+
+// export const SecondaryMediumStory: Story = {
+//   render: function Render() {
+//     return (
+//       <Button htmlType="button" type="secondary" size="medium">
+//         Нажми на меня
+//       </Button>
+//     );
+//   },
+// };
+
+// export const SecondaryLargeStory: Story = {
+//   render: function Render() {
+//     return (
+//       <Button htmlType="button" type="secondary" size="large">
+//         Нажми на меня
+//       </Button>
+//     );
+//   },
+// };
