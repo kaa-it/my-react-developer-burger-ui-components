@@ -1,0 +1,10 @@
+import { Meta, StoryObj } from '@storybook/react-vite';
+import { CloseIcon } from '../../lib';
+declare const meta: Meta<typeof CloseIcon>;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export declare const Primary: Story;
+export declare const Secondary: Story;
+export declare const Disabled: Story;
+export declare const Error: Story;
+export declare const Success: Story;

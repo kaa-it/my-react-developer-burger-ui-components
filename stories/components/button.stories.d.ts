@@ -1,0 +1,11 @@
+import { Meta, StoryObj } from '@storybook/react-vite';
+import { Button } from '../../lib';
+declare const meta: Meta<typeof Button>;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export declare const PrimarySmall: Story;
+export declare const PrimaryMedium: Story;
+export declare const PrimaryLarge: Story;
+export declare const SecondarySmall: Story;
+export declare const SecondaryMedium: Story;
+export declare const SecondaryLarge: Story;
