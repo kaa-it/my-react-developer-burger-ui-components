@@ -12,10 +12,6 @@ const meta: Meta<typeof ConstructorElement> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// <ConstructorElement type='top' isLocked={true} text='Краторная булка N-200i (верх)' price={200} thumbnail={img} />
-// <ConstructorElement text='Краторная булка N-200i (верх)' price={50} thumbnail={img} />
-// <ConstructorElement type='bottom' isLocked={true} text='Краторная булка N-200i (низ)' price={200} thumbnail={img} />
-
 export const Top: Story = {
     args: {
         type: 'top',
