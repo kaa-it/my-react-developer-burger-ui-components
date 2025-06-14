@@ -13,38 +13,47 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const  WithIcon: Story = {
-    render: () => {
-        const [value, setValue] = useState('bob@example.com')
+    render: ({value, placeholder, isIcon}) => {
+        const [data, setData] = useState(value)
         const onChange = (e:  ChangeEvent<HTMLInputElement>)  => {
-            setValue(e.target.value)
+            setData(e.target.value)
         }
 
         return (
             <EmailInput
                 onChange={onChange}
-                value={value}
+                value={data}
                 name={'email'}
-                placeholder="Логин"
-                isIcon={true}
+                placeholder={placeholder}
+                isIcon={isIcon}
             />
         );
+    },
+    args: {
+        value: 'bob@example.com',
+        placeholder: 'Логин',
+        isIcon: true
     }
 };
 
-export const WithoutIcon: Story = {
-    render: () => {
-        const [value, setValue] = useState('bob@example.com')
+export const  WithoutIcon: Story = {
+    render: ({value, isIcon}) => {
+        const [data, setData] = useState(value)
         const onChange = (e:  ChangeEvent<HTMLInputElement>)  => {
-            setValue(e.target.value)
+            setData(e.target.value)
         }
 
         return (
             <EmailInput
                 onChange={onChange}
-                value={value}
+                value={data}
                 name={'email'}
-                isIcon={false}
+                isIcon={isIcon}
             />
         );
+    },
+    args: {
+        value: 'bob@example.com',
+        isIcon: false
     }
-}
+};
