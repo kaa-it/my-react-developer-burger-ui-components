@@ -1,4 +1,4 @@
-import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{C as u}from"./password-input-DUmsXx4T.js";import"./iframe-BGoeygs4.js";const f={title:"Components/Counter",component:u,decorators:[l=>s.jsx("div",{style:{margin:"30px"},children:s.jsx(l,{})})]},e={args:{count:1,size:"default"}},r={args:{count:233,size:"small"}};var a,o,t;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`{
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{C as u}from"./preloader-B7BzVgwb.js";import"./iframe-C8_Lm2Ha.js";const f={title:"Components/Counter",component:u,decorators:[l=>s.jsx("div",{style:{margin:"30px"},children:s.jsx(l,{})})]},e={args:{count:1,size:"default"}},r={args:{count:233,size:"small"}};var a,o,t;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`{
   args: {
     count: 1,
     size: "default"

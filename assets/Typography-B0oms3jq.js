@@ -1,4 +1,4 @@
-import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as o}from"./index-D-oaAjjO.js";import{M as r,C as i}from"./blocks-Cc5h9E0J.js";import{Default as d,Large as x,Medium as a,Small as l,InactiveColor as m,DigitsDefault as h,DigitsMedium as c,DigitsLarge as j}from"./Typography.stories-1rLo5-8K.js";import"./iframe-BGoeygs4.js";import"./index-BkJ0sefH.js";function s(n){const e={h1:"h1",h2:"h2",...o(),...n.components};return t.jsxs(t.Fragment,{children:[t.jsx(r,{title:"styles/Typography"}),`
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as o}from"./index-Dn-BKwAw.js";import{M as r,C as i}from"./blocks-B4SqV7dr.js";import{Default as d,Large as x,Medium as a,Small as l,InactiveColor as m,DigitsDefault as h,DigitsMedium as c,DigitsLarge as j}from"./Typography.stories-1rLo5-8K.js";import"./iframe-C8_Lm2Ha.js";import"./index-CLeEXnLV.js";function s(n){const e={h1:"h1",h2:"h2",...o(),...n.components};return t.jsxs(t.Fragment,{children:[t.jsx(r,{title:"styles/Typography"}),`
 `,t.jsx(e.h1,{id:"typography",children:"Typography"}),`
 `,t.jsx(e.h2,{id:"text-default",children:"Text default"}),`
 `,t.jsx(i,{of:d}),`
