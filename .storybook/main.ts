@@ -5,6 +5,14 @@ const config: StorybookConfig = {
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
+  core: {
+    builder: {
+      name: '@storybook/builder-vite',
+      options: {
+        viteConfigPath: './vite.storybook.config.ts',
+      },
+    },
+  },
   "addons": [
     "@chromatic-com/storybook",
     "@storybook/addon-docs",

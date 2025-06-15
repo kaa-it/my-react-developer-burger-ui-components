@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from 'storybook/test';
 import {ConstructorElement} from "../../lib";
-import bun from "./images/img.png";
+import bun from "../../assets/images/img.png";
 
 const meta: Meta<typeof ConstructorElement> = {
     title: "Components/ConstructorElement",

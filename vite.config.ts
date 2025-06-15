@@ -6,9 +6,11 @@ import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '',
   plugins: [
     react(),
     dts({
+      outDir: 'dist',
       rollupTypes: true,
 	  tsconfigPath: "./tsconfig.app.json",
 	  insertTypesEntry: true

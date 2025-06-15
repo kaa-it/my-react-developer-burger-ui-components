@@ -1,7 +1,8 @@
 import type { Preview } from "@storybook/react-vite";
-import "../src/lib/ui/fonts/fonts.css";
+import "../src/assets/fonts/fonts.css";
 import "../src/lib/ui/common.css";
 import "../src/lib/ui/box.css";
+
 import { themes } from "storybook/theming";
 
 const preview: Preview = {

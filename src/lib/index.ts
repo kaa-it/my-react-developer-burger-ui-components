@@ -28,7 +28,7 @@ import {
     MenuIcon,
 } from './ui/icons';
 
-import './ui/fonts/fonts.css';
+import '../assets/fonts/fonts.css';
 import './ui/common.css';
 import './ui/box.css';
 
