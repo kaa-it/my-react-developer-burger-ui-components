@@ -1,7 +1,6 @@
 {
   "name": "@krgaa/react-developer-burger-ui-components",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "homepage": "https://kaa-it.github.io/my-react-developer-burger-ui-components",
   "files": [
